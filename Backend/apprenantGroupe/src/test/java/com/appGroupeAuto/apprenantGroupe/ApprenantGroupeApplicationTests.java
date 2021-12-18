@@ -1,10 +1,10 @@
-package com.ProjetGroupeAuto.GroupeAuto;
+package com.appGroupeAuto.apprenantGroupe;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GroupeAutoApplicationTests {
+class ApprenantGroupeApplicationTests {
 
 	@Test
 	void contextLoads() {

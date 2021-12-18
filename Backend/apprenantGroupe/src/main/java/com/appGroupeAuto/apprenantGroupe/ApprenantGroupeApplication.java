@@ -1,13 +1,13 @@
-package com.ProjetGroupeAuto.GroupeAuto;
+package com.appGroupeAuto.apprenantGroupe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GroupeAutoApplication {
+public class ApprenantGroupeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GroupeAutoApplication.class, args);
+		SpringApplication.run(ApprenantGroupeApplication.class, args);
 	}
 
 }
