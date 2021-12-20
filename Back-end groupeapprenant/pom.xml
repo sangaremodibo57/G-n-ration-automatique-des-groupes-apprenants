@@ -8,11 +8,11 @@
 		<version>2.6.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.appGroupeAuto</groupId>
-	<artifactId>apprenantGroupe</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>groupeapprenant</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>apprenantGroupe</name>
-	<description>Application génère groupe auto</description>
+	<name>groupeapprenant</name>
+	<description>Réparition des apprenants par groupe</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
