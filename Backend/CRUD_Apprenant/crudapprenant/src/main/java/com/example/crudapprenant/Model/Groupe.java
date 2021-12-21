@@ -7,20 +7,19 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.Date;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Apprenant {
+public class Groupe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
-    private String nom_complet;
-    private String email;
-    private Long telephone;
-    @OneToMany(mappedBy = "apprenant")
-    private Collection<Apprenant> apprenant;
-
+    private String nom;
+    private Date date;
+    @OneToMany(mappedBy = "groupe")
+    private Collection<Groupe_Apprenant> groupe_apprenant;
 }

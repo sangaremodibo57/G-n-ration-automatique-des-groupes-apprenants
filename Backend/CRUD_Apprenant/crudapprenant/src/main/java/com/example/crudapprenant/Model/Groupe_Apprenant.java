@@ -13,14 +13,14 @@ import java.util.Collection;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Apprenant {
+public class Groupe_Apprenant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
-    private String nom_complet;
-    private String email;
-    private Long telephone;
-    @OneToMany(mappedBy = "apprenant")
-    private Collection<Apprenant> apprenant;
 
+    private String nom;
+    @ManyToOne
+    private Apprenant apprenant;
+    @ManyToOne
+    private Groupe groupe;
 }
