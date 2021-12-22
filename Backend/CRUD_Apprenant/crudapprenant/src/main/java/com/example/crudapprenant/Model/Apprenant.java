@@ -20,7 +20,7 @@ public class Apprenant {
     private String nom_complet;
     private String email;
     private Long telephone;
-    @OneToMany(mappedBy = "apprenant")
-    private Collection<Apprenant> apprenant;
+    @ManyToMany
+    private Collection<Groupe> groupe;
 
 }

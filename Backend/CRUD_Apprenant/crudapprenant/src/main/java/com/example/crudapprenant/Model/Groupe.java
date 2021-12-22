@@ -20,6 +20,7 @@ public class Groupe {
     private  Long id;
     private String nom;
     private Date date;
-    @OneToMany(mappedBy = "groupe")
-    private Collection<Groupe_Apprenant> groupe_apprenant;
+    @ManyToMany
+    private Collection<Apprenant> apprenants;
+
 }

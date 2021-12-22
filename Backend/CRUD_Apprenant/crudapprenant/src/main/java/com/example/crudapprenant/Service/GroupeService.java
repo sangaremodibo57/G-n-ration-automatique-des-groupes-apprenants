@@ -10,4 +10,5 @@ public interface GroupeService {
     public List<Groupe> getallgroupe();
     public Groupe getgroupeByid(Long id);
     public  void deletegroupe(Long id);
+    public List<Groupe> Nbregrpeapprenant(Integer nombreGroupe);
 }

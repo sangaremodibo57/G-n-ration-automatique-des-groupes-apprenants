@@ -1,10 +1,13 @@
 package com.example.crudapprenant.Service;
 
 import com.example.crudapprenant.Model.Apprenant;
+import com.example.crudapprenant.Model.Groupe;
 import com.example.crudapprenant.Repository.ApprenantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -41,4 +44,10 @@ public class ApprenantServiceImp implements ApprenantService{
         apprenantRepository.deleteById(id);
 
     }
+
+
+
+
+
+
 }

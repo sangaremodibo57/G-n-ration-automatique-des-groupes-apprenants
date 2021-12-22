@@ -38,8 +38,9 @@ public class ApprenantController {
     @DeleteMapping("/deleteapprenant/{id}")
     public void deleteapprenantbyId(@PathVariable Long id) {
         appreService.deleteapprenant(id);
-
 }
+//Compter Nombre d'Apprenant par groupe
+
 
 
 }

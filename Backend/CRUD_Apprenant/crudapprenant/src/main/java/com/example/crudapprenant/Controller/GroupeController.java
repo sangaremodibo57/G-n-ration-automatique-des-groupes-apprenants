@@ -43,4 +43,9 @@ public class GroupeController {
         groupeService.deletegroupe(id);
 
     }
+    //Groupe des Apprenants
+    @GetMapping("/nbregroupe")
+    public List<Groupe> Nbregrpeapprenant(@PathVariable Integer nombreGroupe) {
+        return groupeService.Nbregrpeapprenant(nombreGroupe);
+    }
 }
