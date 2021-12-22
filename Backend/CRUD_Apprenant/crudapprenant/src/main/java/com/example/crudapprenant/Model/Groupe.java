@@ -20,7 +20,8 @@ public class Groupe {
     private  Long id;
     private String nom;
     private Date date;
-    @ManyToMany
+    @ManyToMany(mappedBy = "groupe")
+
     private Collection<Apprenant> apprenants;
 
 }

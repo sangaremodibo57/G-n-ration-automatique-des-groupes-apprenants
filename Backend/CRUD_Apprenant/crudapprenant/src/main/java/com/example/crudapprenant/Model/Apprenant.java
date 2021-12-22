@@ -21,6 +21,7 @@ public class Apprenant {
     private String email;
     private Long telephone;
     @ManyToMany
+    @JoinTable(name = "list_group")
     private Collection<Groupe> groupe;
 
 }
