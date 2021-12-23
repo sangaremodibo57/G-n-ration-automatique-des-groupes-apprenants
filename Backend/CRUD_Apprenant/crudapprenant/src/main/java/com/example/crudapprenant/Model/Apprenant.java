@@ -1,5 +1,6 @@
 package com.example.crudapprenant.Model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,6 +8,7 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.List;
 
 @Entity
 @Data
@@ -20,8 +22,10 @@ public class Apprenant {
     private String nom_complet;
     private String email;
     private Long telephone;
-    @ManyToMany
-    @JoinTable(name = "list_group")
-    private Collection<Groupe> groupe;
+   @JsonIgnore
+    @ManyToMany(mappedBy = "apprenants")
+private List<Groupe> groupe;
+
+
 
 }

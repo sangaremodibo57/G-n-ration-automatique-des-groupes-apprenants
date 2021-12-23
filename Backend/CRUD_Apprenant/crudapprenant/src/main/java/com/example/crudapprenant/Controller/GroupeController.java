@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/crud_apprenant/api/v1")
+@RequestMapping("/crud_apprenant/api/")
 @CrossOrigin("*")
 public class GroupeController {
     @Autowired
@@ -44,8 +44,8 @@ public class GroupeController {
 
     }
     //Groupe des Apprenants
-    @GetMapping("/nbregroupe")
-    public List<Groupe> Nbregrpeapprenant(@PathVariable Integer nombreGroupe) {
+    @GetMapping("/nbregroupe/{nombreGroupe}")
+    public List<Groupe> Nombresgrpeapprenant(@PathVariable Integer nombreGroupe) {
         return groupeService.Nbregrpeapprenant(nombreGroupe);
     }
 }
